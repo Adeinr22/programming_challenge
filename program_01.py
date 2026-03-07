@@ -7,8 +7,6 @@ while True:
             print(first_number)
         elif first_number < second_number:
             print(second_number)
-        elif first_number == second_number:
-            print(f'first number {first_number} and second number {second_number} are the same')
         break
     except:
         print("only numbers are allowed")
