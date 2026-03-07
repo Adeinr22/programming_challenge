@@ -1,5 +1,4 @@
 
-# Prog03: Create a program that ask user to input 2 numbers. Print the sum of the two numbers.
 # Prog04: Create a program that ask user to input 2 numbers. Print the product of the two numbers.
 # Prog05: Create a program that ask user to input 2 numbers. Print the quotient of the two numbers with the decimal point
 # Prog06: Create a program that ask user to input 2 numbers. Print the result when the first number is raised to the second number.
