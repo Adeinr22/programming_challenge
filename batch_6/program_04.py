@@ -1,18 +1,18 @@
 # Prog04. isupper() check if all characters of the string is on upper case. Create a program that do the same functionality without using isupper() function.
 
 user_input = input("enter whatever you want: ")
-lower_checker = False
-temu_isupper = False
+has_uppercase = False
+has_lowercase = False
+
 for char in user_input:
-    if char == char.lower() and char != " ":
-        lower_checker = True
-    else:
-        pass
-if lower_checker:
-    pass
-else:
-    temu_isupper = True
-if temu_isupper:
+    if 'a' <= char <= 'z':
+        has_lowercase = True
+        break  
+    elif 'A' <= char <= 'Z':
+        has_uppercase = True
+if has_lowercase:
+    print("input contains a lowercase")
+elif has_uppercase:
     print("all characters are uppercase")
 else:
-    print("input contains a lowercase")
+    print("no uppercase letters")
