@@ -6,11 +6,15 @@ try:
 
     if width_input < 0:
         print(user_input)
-
     elif len(user_input) < width_input:
         zeros_needed = width_input - len(user_input)
         zeros = '0' * zeros_needed 
-        print(zeros + user_input)
+        if user_input[0] == '+':
+            print('+' + zeros + user_input[1:])
+        elif user_input[0] == '-':
+            print('-' + zeros + user_input[1:])
+        else:
+            print(zeros + user_input)
     else:
         print(user_input)
 
