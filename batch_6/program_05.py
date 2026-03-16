@@ -3,9 +3,13 @@
 user_input = input("enter whatever you want: ")
 end_input = input("what should it end with: ")
 checker = True
-for i in range(len(end_input)):
-    if user_input[(-1 - i)] != end_input[(-1 - i)]:
-        checker = False
+if len(end_input) > len(user_input):
+    checker = False
+else:
+    for i in range(len(end_input)):
+        if user_input[(-1 - i)] != end_input[(-1 - i)]:
+            checker = False
+            break
 
 if checker:
     print(user_input + " ends with " + end_input)
