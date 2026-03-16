@@ -1,18 +1,17 @@
 # Prog04. islower() check if all characters of the string is on lower case. Create a program that do the same 
 # functionality without using islower() function.
 user_input = input("enter whatever you want: ")
-upper_checker = False
-temu_islower = False
+has_cased = False
+all_lower = True
+
 for char in user_input:
-    if char == char.upper() and char != " ":
-        upper_checker = True
-    else:
-        pass
-if upper_checker:
-    pass
-else:
-    temu_islower = True
-if temu_islower:
+    if 'A' <= char <= 'Z':
+        all_lower = False
+        break
+    elif 'a' <= char <= 'z':
+        has_cased = True
+
+if has_cased and all_lower:
     print("all characters are lowercase")
 else:
-    print("input contains a uppercase")
+    print("not all characters are lowercase")
